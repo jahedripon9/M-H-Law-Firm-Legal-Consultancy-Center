@@ -1,7 +1,7 @@
 import Client from '../../assets/Client.jpg'
 const ClientMeeting = () => {
   return (
-    <div>
+    <div className='container mx-auto'>
         <span className="relative flex justify-center my-10">
         <div className="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-transparent bg-gradient-to-r from-transparent via-gray-500 to-transparent opacity-75"></div>
 
@@ -19,7 +19,7 @@ const ClientMeeting = () => {
           <section className="container mx-auto p-10 md:py-20 px-0 md:p-10 md:px-0">
         <section className="relative px-10 md:p-0 transform duration-500 hover:shadow-2xl cursor-pointer hover:-translate-y-1 ">
             <img className="xl:max-w-6xl" src={Client} alt=""/>
-            <div className="content bg-white p-2 pt-8 md:p-12 pb-12 lg:max-w-lg w-full lg:absolute top-48 right-5">
+            <div className="content bg-white p-2 pt-8 md:p-12 pb-12 lg:max-w-lg md:max-w-md w-full lg:absolute top-48 right-5">
                 <div className="flex justify-between font-bold text-sm">
                     <p>Office Time</p>
                     <p className="text-gray-400">10th October, 2024</p>

@@ -4,7 +4,7 @@ import img3 from "../../assets/hammer.svg";
 import img4 from "../../assets/law.svg"
 const CaseSuccessRate = () => {
   return (
-    <div>
+    <div className="container mx-auto">
         <span className="relative flex justify-center my-12">
         <div className="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-transparent bg-gradient-to-r from-transparent via-gray-500 to-transparent opacity-75"></div>
 

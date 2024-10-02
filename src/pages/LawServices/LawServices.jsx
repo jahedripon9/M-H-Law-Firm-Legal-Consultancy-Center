@@ -21,7 +21,7 @@ const LawServices = () => {
       </div>
       <section className="container mx-auto p-10 md:py-20 px-0 md:p-20 md:px-0">
         <section className="grid lg:grid-cols-2 xl:grid-cols-4 2xl:grid-cols-4 grid-cols-1 gap-10 antialiased">
-          <article className="flex flex-col shadow-xl mx-auto max-w-sm bg-red-100 py-20 px-12 transform duration-500 hover:-translate-y-2 cursor-pointer max-h-190 rounded-md">
+          <article className="flex flex-col shadow-xl mx-auto max-w-sm bg-red-100 py-10 px-12 transform duration-500 hover:-translate-y-2 cursor-pointer max-h-fit rounded-md">
             <div className="min-h-62">
               <img className="mx-auto" src={img4} alt="" />
             </div>
@@ -37,7 +37,7 @@ const LawServices = () => {
             </p>
           </article>
 
-          <article className="flex flex-col shadow-xl mx-auto max-w-sm bg-yellow-100 py-20 px-12 transform duration-500 hover:-translate-y-2 cursor-pointer mt-0 md:mt-20 max-h-190 rounded-md">
+          <article className="flex flex-col shadow-xl mx-auto max-w-sm bg-yellow-100 py-10 px-12 transform duration-500 hover:-translate-y-2 cursor-pointer mt-0 md:mt-20 max-h-fit rounded-md">
             <div className="min-h-62">
               <img className="mx-auto" src={img3} alt="" />
             </div>
@@ -53,7 +53,7 @@ const LawServices = () => {
             </p>
           </article>
 
-          <article className="flex flex-col shadow-xl mx-auto max-w-sm bg-blue-100 py-20 px-12 transform duration-500 hover:-translate-y-2 cursor-pointer max-h-190 rounded-md">
+          <article className="flex flex-col shadow-xl mx-auto max-w-sm bg-blue-100 py-10 px-12 transform duration-500 hover:-translate-y-2 cursor-pointer max-h-fit rounded-md">
             <div className="min-h-62">
               <img className="mx-auto" src={img2} alt="" />
             </div>
@@ -69,7 +69,7 @@ const LawServices = () => {
             </p>
           </article>
 
-          <article className="flex flex-col shadow-xl mx-auto max-w-sm bg-purple-100 py-20 px-12 transform duration-500 hover:-translate-y-2 cursor-pointer mt-0 md:mt-20 max-h-190 rounded-md">
+          <article className="flex flex-col shadow-xl mx-auto max-w-sm bg-purple-100 py-10 px-12 transform duration-500 hover:-translate-y-2 cursor-pointer mt-0 md:mt-20 max-h-fit rounded-md">
             <div className="min-h-62">
               <img className="mx-auto" src={img1} alt="" />
             </div>
@@ -84,7 +84,7 @@ const LawServices = () => {
               also provide various legal services.
             </p>
           </article>
-          <article className="flex flex-col shadow-xl mx-auto max-w-sm bg-red-100 py-20 px-12 transform duration-500 hover:-translate-y-2 cursor-pointer max-h-190 rounded-md">
+          <article className="flex flex-col shadow-xl mx-auto max-w-sm bg-red-100 py-10 px-12 transform duration-500 hover:-translate-y-2 cursor-pointer max-h-fit rounded-md">
             <div className="min-h-62">
               <img className="mx-auto" src={img4} alt="" />
             </div>
@@ -100,7 +100,7 @@ const LawServices = () => {
             </p>
           </article>
 
-          <article className="flex flex-col shadow-xl mx-auto max-w-sm bg-yellow-100 py-20 px-12 transform duration-500 hover:-translate-y-2 cursor-pointer mt-0 md:mt-20 max-h-190 rounded-md">
+          <article className="flex flex-col shadow-xl mx-auto max-w-sm bg-yellow-100 py-10 px-12 transform duration-500 hover:-translate-y-2 cursor-pointer mt-0 md:mt-20 max-h-fit rounded-md">
             <div className="min-h-62">
               <img className="mx-auto" src={img3} alt="" />
             </div>
@@ -116,7 +116,7 @@ const LawServices = () => {
             </p>
           </article>
 
-          <article className="flex flex-col shadow-xl mx-auto max-w-sm bg-blue-100 py-20 px-12 transform duration-500 hover:-translate-y-2 cursor-pointer max-h-190 rounded-md">
+          <article className="flex flex-col shadow-xl mx-auto max-w-sm bg-blue-100 py-10 px-12 transform duration-500 hover:-translate-y-2 cursor-pointer max-h-fit rounded-md">
             <div className="min-h-62">
               <img className="mx-auto" src={img2} alt="" />
             </div>
@@ -132,7 +132,7 @@ const LawServices = () => {
             </p>
           </article>
 
-          <article className="flex flex-col shadow-xl mx-auto max-w-sm bg-purple-100 py-20 px-12 transform duration-500 hover:-translate-y-2 cursor-pointer mt-0 md:mt-20 max-h-190 rounded-md">
+          <article className="flex flex-col shadow-xl mx-auto max-w-sm bg-purple-100 py-10 px-12 transform duration-500 hover:-translate-y-2 cursor-pointer mt-0 md:mt-20 max-h-fit rounded-md">
             <div className="min-h-62">
               <img className="mx-auto" src={img1} alt="" />
             </div>
@@ -147,7 +147,7 @@ const LawServices = () => {
               also provide various legal services.
             </p>
           </article>
-          <article className="flex flex-col shadow-xl mx-auto max-w-sm bg-red-100 py-20 px-12 transform duration-500 hover:-translate-y-2 cursor-pointer max-h-190 rounded-md">
+          <article className="flex flex-col shadow-xl mx-auto max-w-sm bg-red-100 py-10 px-12 transform duration-500 hover:-translate-y-2 cursor-pointer max-h-fit rounded-md">
             <div className="min-h-62">
               <img className="mx-auto" src={img4} alt="" />
             </div>
@@ -163,7 +163,7 @@ const LawServices = () => {
             </p>
           </article>
 
-          <article className="flex flex-col shadow-xl mx-auto max-w-sm bg-yellow-100 py-20 px-12 transform duration-500 hover:-translate-y-2 cursor-pointer mt-0 md:mt-20 max-h-190 rounded-md">
+          <article className="flex flex-col shadow-xl mx-auto max-w-sm bg-yellow-100 py-10 px-12 transform duration-500 hover:-translate-y-2 cursor-pointer mt-0 md:mt-20 max-h-fit rounded-md">
             <div className="min-h-62">
               <img className="mx-auto" src={img3} alt="" />
             </div>
@@ -179,7 +179,7 @@ const LawServices = () => {
             </p>
           </article>
 
-          <article className="flex flex-col shadow-xl mx-auto max-w-sm bg-blue-100 py-20 px-12 transform duration-500 hover:-translate-y-2 cursor-pointer max-h-190 rounded-md">
+          <article className="flex flex-col shadow-xl mx-auto max-w-sm bg-blue-100 py-10 px-12 transform duration-500 hover:-translate-y-2 cursor-pointer max-h-fit rounded-md">
             <div className="min-h-62">
               <img className="mx-auto" src={img2} alt="" />
             </div>
@@ -195,7 +195,7 @@ const LawServices = () => {
             </p>
           </article>
 
-          <article className="flex flex-col shadow-xl mx-auto max-w-sm bg-purple-100 py-20 px-12 transform duration-500 hover:-translate-y-2 cursor-pointer mt-0 md:mt-20 max-h-190 rounded-md">
+          <article className="flex flex-col shadow-xl mx-auto max-w-sm bg-purple-100 py-10 px-12 transform duration-500 hover:-translate-y-2 cursor-pointer mt-0 md:mt-20 max-h-fit rounded-md">
             <div className="min-h-62">
               <img className="mx-auto" src={img1} alt="" />
             </div>

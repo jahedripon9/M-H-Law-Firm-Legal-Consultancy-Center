@@ -27,7 +27,7 @@ const Hero = () => {
                   className="inline-block rounded border border-current px-8 py-3 text-sm font-medium text-green-600 transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:text-green-500"
                   href="#"
                 >
-                  Download
+                  GET STARTED
                 </a></a>
         </div>
     </div>

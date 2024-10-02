@@ -1,5 +1,5 @@
 import Hero from "../Hero/Hero"
-// import LawServices from "../LawServices/LawServices"
+import LawServices from "../LawServices/LawServices"
 import Navbar from "../Shared/Navbar"
 
 const Home = () => {
@@ -7,7 +7,7 @@ const Home = () => {
     <div>
         <Navbar />
         <Hero />
-        {/* <LawServices /> */}
+        <LawServices />
     </div>
   )
 }

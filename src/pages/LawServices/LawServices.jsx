@@ -20,7 +20,7 @@ const LawServices = () => {
         </h1>
       </div>
       <section className="container mx-auto p-10 md:py-20 px-0 md:p-20 md:px-0">
-        <section className="grid lg:grid-cols-2 xl:grid-cols-4 grid-cols-1 gap-10 antialiased">
+        <section className="grid lg:grid-cols-2 xl:grid-cols-4 2xl:grid-cols-4 grid-cols-1 gap-10 antialiased">
           <article className="flex flex-col shadow-xl mx-auto max-w-sm bg-red-100 py-20 px-12 transform duration-500 hover:-translate-y-2 cursor-pointer max-h-190 rounded-md">
             <div className="min-h-62">
               <img className="mx-auto" src={img4} alt="" />

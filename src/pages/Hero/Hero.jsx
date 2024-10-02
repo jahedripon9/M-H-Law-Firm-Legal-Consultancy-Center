@@ -1,11 +1,11 @@
 import img from '../../assets/Untitled-1.png'
 const Hero = () => {
   return (
-    <div>
-        <div className="relative flex flex-col items-center mx-auto lg:flex-row-reverse lg:max-w-5xl lg:mt-12 xl:max-w-6xl">
+    <div className=''>
+        <div className="relative flex flex-col items-center mx-auto lg:flex-row-reverse lg:max-w-5xl lg:mt-12 xl:max-w-6xl ">
 
 {/* <!-- Image Column --> */}
-<div className="w-full h-64 lg:w-1/2 lg:h-auto">
+<div className="w-auto  h-76 lg:w-1/2 lg:h-auto ">
     <img className="h-full w-full object-cover" src={img} alt="Winding mountain road" />
 </div>
 {/* <!-- Close Image Column --> */}

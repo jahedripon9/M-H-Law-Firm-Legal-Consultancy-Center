@@ -1,4 +1,4 @@
-
+import img from '../../assets/Untitled-1.png'
 const Hero = () => {
   return (
     <div>
@@ -6,7 +6,7 @@ const Hero = () => {
 
 {/* <!-- Image Column --> */}
 <div className="w-full h-64 lg:w-1/2 lg:h-auto">
-    <img className="h-full w-full object-cover" src="https://picsum.photos/id/1018/2000" alt="Winding mountain road" />
+    <img className="h-full w-full object-cover" src={img} alt="Winding mountain road" />
 </div>
 {/* <!-- Close Image Column --> */}
 

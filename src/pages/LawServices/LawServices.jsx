@@ -5,12 +5,7 @@ import img4 from "../../assets/law.svg";
 const LawServices = () => {
   return (
     <div className="container mx-auto">
-      <span className="relative flex justify-center my-24">
-        <div className="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-transparent bg-gradient-to-r from-transparent via-gray-500 to-transparent opacity-75"></div>
-
-        <span className="relative z-10 bg-white px-6">Our Services</span>
-      </span>
-      <div className="mx-auto max-w-xl text-center ">
+            <div className="mx-auto max-w-xl text-center ">
         <h1 className="text-3xl font-extrabold sm:text-5xl ">
           Why do we help with
           <strong className="font-extrabold text-red-700 sm:block">

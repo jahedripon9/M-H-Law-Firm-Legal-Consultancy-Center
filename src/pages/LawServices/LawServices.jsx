@@ -1,12 +1,88 @@
+import { useState } from "react";
 import img1 from "../../assets/auction.svg";
 import img2 from "../../assets/building.svg";
 import img3 from "../../assets/hammer.svg";
 import img4 from "../../assets/law.svg";
+
 const LawServices = () => {
+  const [visibleCards, setVisibleCards] = useState(4);
+
+  // Array of card data to render dynamically
+  const cardData = [
+    {
+      id: 1,
+      img: img4,
+      title: "Civil & Criminal Case",
+      description:
+        "Environmental legal issues might occur since the planned business activities are designed.",
+      bgColor: "bg-red-100",
+    },
+    {
+      id: 2,
+      img: img3,
+      title: "Family Law & Criminal Law",
+      description:
+        "We provide a complete range of services for the continuity of your business activities.",
+      bgColor: "bg-yellow-100",
+    },
+    {
+      id: 3,
+      img: img2,
+      title: "Company Law & Property Law",
+      description:
+        "IT not followed by the existing regulation which might cause legal uncertainty and business uncertainty.",
+      bgColor: "bg-blue-100",
+    },
+    {
+      id: 4,
+      img: img1,
+      title: "Drafting of Deeds and Documentation",
+      description:
+        "In dealing with disruptive economic and legal challenge, our firm also provide various legal services.",
+      bgColor: "bg-purple-100",
+    },
+    {
+      id: 5,
+      img: img4,
+      title: "Family Dispute Cases",
+      description:
+        "Environmental legal issues might occur since the planned business activities are designed.",
+      bgColor: "bg-red-100",
+    },
+    {
+      id: 6,
+      img: img3,
+      title: "Matrimonial Disputes",
+      description:
+        "We provide a complete range of services for the continuity of your business activities.",
+      bgColor: "bg-blue-100",
+    },
+    {
+      id: 7,
+      img: img2,
+      title: "Registration Court Marriage",
+      description:
+        "IT not followed by the existing regulation which might cause legal uncertainty and business uncertainty.",
+      bgColor: "bg-yellow-100",
+    },
+    {
+      id: 8,
+      img: img1,
+      title: "Marriage Registration",
+      description:
+        "In dealing with disruptive economic and legal challenge, our firm also provide various legal services.",
+      bgColor: "bg-red-100",
+    },
+  ];
+
+  const showMoreCards = () => {
+    setVisibleCards((prevVisibleCards) => prevVisibleCards + 4);
+  };
+
   return (
     <div className="container mx-auto">
-            <div className="mx-auto max-w-xl text-center ">
-        <h1 className="text-3xl font-extrabold sm:text-5xl ">
+      <div className="mx-auto max-w-xl text-center">
+        <h1 className="text-3xl font-extrabold sm:text-5xl">
           Why do we help with
           <strong className="font-extrabold text-red-700 sm:block">
             {" "}
@@ -14,199 +90,42 @@ const LawServices = () => {
           </strong>
         </h1>
       </div>
+
       <section className="container mx-auto p-10 md:py-20 px-0 md:p-20 md:px-0">
         <section className="grid lg:grid-cols-2 xl:grid-cols-4 2xl:grid-cols-4 grid-cols-1 gap-10 antialiased">
-          <article className="flex flex-col shadow-xl mx-auto max-w-sm bg-red-100 py-10 px-12 transform duration-500 hover:-translate-y-2 cursor-pointer max-h-fit rounded-md">
-            <div className="min-h-62">
-              <img className="mx-auto" src={img4} alt="" />
-            </div>
-            <h1 className="font-extrabold text-6xl mt-28 mb-10 text-gray-800">
-              01.
-            </h1>
-            <h2 className="font-bold mb-5 text-2xl text-gray-800">
-              Civil & Criminal Case
-            </h2>
-            <p className="text-md leading-relaxed text-gray-700">
-              Environmental legal issues might occur since the planned business
-              activities are designed.
-            </p>
-          </article>
-
-          <article className="flex flex-col shadow-xl mx-auto max-w-sm bg-yellow-100 py-10 px-12 transform duration-500 hover:-translate-y-2 cursor-pointer mt-0 md:mt-20 max-h-fit rounded-md">
-            <div className="min-h-62">
-              <img className="mx-auto" src={img3} alt="" />
-            </div>
-            <h1 className="font-extrabold text-6xl mt-28 mb-10 text-gray-800">
-              02.
-            </h1>
-            <h2 className="font-bold mb-5 text-2xl text-gray-800">
-              Family Law & Criminal Law
-            </h2>
-            <p className="text-md leading-relaxed text-gray-700">
-              We provide a complete range of services for the continuity of your
-              business activities.
-            </p>
-          </article>
-
-          <article className="flex flex-col shadow-xl mx-auto max-w-sm bg-blue-100 py-10 px-12 transform duration-500 hover:-translate-y-2 cursor-pointer max-h-fit rounded-md">
-            <div className="min-h-62">
-              <img className="mx-auto" src={img2} alt="" />
-            </div>
-            <h1 className="font-extrabold text-6xl mt-28 mb-10 text-gray-800">
-              03.
-            </h1>
-            <h2 className="font-bold mb-5 text-2xl text-gray-800">
-              Company Law & Property Law
-            </h2>
-            <p className="text-md leading-relaxed text-gray-700">
-              IT not followed by the existing regulation which might cause legal
-              uncertainty and business uncertainty.
-            </p>
-          </article>
-
-          <article className="flex flex-col shadow-xl mx-auto max-w-sm bg-purple-100 py-10 px-12 transform duration-500 hover:-translate-y-2 cursor-pointer mt-0 md:mt-20 max-h-fit rounded-md">
-            <div className="min-h-62">
-              <img className="mx-auto" src={img1} alt="" />
-            </div>
-            <h1 className="font-extrabold text-6xl mt-28 mb-10 text-gray-800">
-              04.
-            </h1>
-            <h2 className="font-bold mb-5 text-2xl text-gray-800">
-              Drafting of Deeds and Documentation
-            </h2>
-            <p className="text-md leading-relaxed text-gray-700">
-              In dealing with disruptive economic and legal challenge, our firm
-              also provide various legal services.
-            </p>
-          </article>
-          <article className="flex flex-col shadow-xl mx-auto max-w-sm bg-red-100 py-10 px-12 transform duration-500 hover:-translate-y-2 cursor-pointer max-h-fit rounded-md">
-            <div className="min-h-62">
-              <img className="mx-auto" src={img4} alt="" />
-            </div>
-            <h1 className="font-extrabold text-6xl mt-28 mb-10 text-gray-800">
-              05.
-            </h1>
-            <h2 className="font-bold mb-5 text-2xl text-gray-800">
-              Family Dispute Cases
-            </h2>
-            <p className="text-md leading-relaxed text-gray-700">
-              Environmental legal issues might occur since the planned business
-              activities are designed.
-            </p>
-          </article>
-
-          <article className="flex flex-col shadow-xl mx-auto max-w-sm bg-yellow-100 py-10 px-12 transform duration-500 hover:-translate-y-2 cursor-pointer mt-0 md:mt-20 max-h-fit rounded-md">
-            <div className="min-h-62">
-              <img className="mx-auto" src={img3} alt="" />
-            </div>
-            <h1 className="font-extrabold text-6xl mt-28 mb-10 text-gray-800">
-              06.
-            </h1>
-            <h2 className="font-bold mb-5 text-2xl text-gray-800">
-              Matrimonial Disputes
-            </h2>
-            <p className="text-md leading-relaxed text-gray-700">
-              We provide a complete range of services for the continuity of your
-              business activities.
-            </p>
-          </article>
-
-          <article className="flex flex-col shadow-xl mx-auto max-w-sm bg-blue-100 py-10 px-12 transform duration-500 hover:-translate-y-2 cursor-pointer max-h-fit rounded-md">
-            <div className="min-h-62">
-              <img className="mx-auto" src={img2} alt="" />
-            </div>
-            <h1 className="font-extrabold text-6xl mt-28 mb-10 text-gray-800">
-              07.
-            </h1>
-            <h2 className="font-bold mb-5 text-2xl text-gray-800">
-              Registration Court Marriage
-            </h2>
-            <p className="text-md leading-relaxed text-gray-700">
-              IT not followed by the existing regulation which might cause legal
-              uncertainty and business uncertainty.
-            </p>
-          </article>
-
-          <article className="flex flex-col shadow-xl mx-auto max-w-sm bg-purple-100 py-10 px-12 transform duration-500 hover:-translate-y-2 cursor-pointer mt-0 md:mt-20 max-h-fit rounded-md">
-            <div className="min-h-62">
-              <img className="mx-auto" src={img1} alt="" />
-            </div>
-            <h1 className="font-extrabold text-6xl mt-28 mb-10 text-gray-800">
-              08.
-            </h1>
-            <h2 className="font-bold mb-5 text-2xl text-gray-800">
-              Marriage Registration
-            </h2>
-            <p className="text-md leading-relaxed text-gray-700">
-              In dealing with disruptive economic and legal challenge, our firm
-              also provide various legal services.
-            </p>
-          </article>
-          <article className="flex flex-col shadow-xl mx-auto max-w-sm bg-red-100 py-10 px-12 transform duration-500 hover:-translate-y-2 cursor-pointer max-h-fit rounded-md">
-            <div className="min-h-62">
-              <img className="mx-auto" src={img4} alt="" />
-            </div>
-            <h1 className="font-extrabold text-6xl mt-28 mb-10 text-gray-800">
-              09.
-            </h1>
-            <h2 className="font-bold mb-5 text-2xl text-gray-800">
-              Divorce / Separation
-            </h2>
-            <p className="text-md leading-relaxed text-gray-700">
-              Environmental legal issues might occur since the planned business
-              activities are designed.
-            </p>
-          </article>
-
-          <article className="flex flex-col shadow-xl mx-auto max-w-sm bg-yellow-100 py-10 px-12 transform duration-500 hover:-translate-y-2 cursor-pointer mt-0 md:mt-20 max-h-fit rounded-md">
-            <div className="min-h-62">
-              <img className="mx-auto" src={img3} alt="" />
-            </div>
-            <h1 className="font-extrabold text-6xl mt-28 mb-10 text-gray-800">
-              10.
-            </h1>
-            <h2 className="font-bold mb-5 text-2xl text-gray-800">
-              Wills Deed, Sale Deed, Gift Deeds 
-            </h2>
-            <p className="text-md leading-relaxed text-gray-700">
-              We provide a complete range of services for the continuity of your
-              business activities.
-            </p>
-          </article>
-
-          <article className="flex flex-col shadow-xl mx-auto max-w-sm bg-blue-100 py-10 px-12 transform duration-500 hover:-translate-y-2 cursor-pointer max-h-fit rounded-md">
-            <div className="min-h-62">
-              <img className="mx-auto" src={img2} alt="" />
-            </div>
-            <h1 className="font-extrabold text-6xl mt-28 mb-10 text-gray-800">
-              11.
-            </h1>
-            <h2 className="font-bold mb-5 text-2xl text-gray-800">
-              Power of Attorney
-            </h2>
-            <p className="text-md leading-relaxed text-gray-700">
-              IT not followed by the existing regulation which might cause legal
-              uncertainty and business uncertainty.
-            </p>
-          </article>
-
-          <article className="flex flex-col shadow-xl mx-auto max-w-sm bg-purple-100 py-10 px-12 transform duration-500 hover:-translate-y-2 cursor-pointer mt-0 md:mt-20 max-h-fit rounded-md">
-            <div className="min-h-62">
-              <img className="mx-auto" src={img1} alt="" />
-            </div>
-            <h1 className="font-extrabold text-6xl mt-28 mb-10 text-gray-800">
-              12.
-            </h1>
-            <h2 className="font-bold mb-5 text-2xl text-gray-800">
-              Affidavit, Legal Notice
-            </h2>
-            <p className="text-md leading-relaxed text-gray-700">
-              In dealing with disruptive economic and legal challenge, our firm
-              also provide various legal services.
-            </p>
-          </article>
-                  
+          {cardData.slice(0, visibleCards).map((card) => (
+            <article
+              key={card.id}
+              className={`flex flex-col shadow-xl mx-auto max-w-sm ${card.bgColor} py-8 px-10 transform duration-500 hover:-translate-y-2 cursor-pointer max-h-fit rounded-md`}
+            >
+              <div className="min-h-62">
+                <img className="mx-auto w-32" src={card.img} alt={card.title} />
+              </div>
+              <h1 className="font-extrabold text-6xl mt-12 mb-6 text-gray-800">
+                {`0${card.id}.`}
+              </h1>
+              <h2 className="font-bold mb-5 text-2xl text-gray-800">
+                {card.title}
+              </h2>
+              <p className="text-md leading-relaxed text-gray-700">
+                {card.description}
+              </p>
+            </article>
+          ))}
         </section>
+
+        {/* Show More button */}
+        {visibleCards < cardData.length && (
+          <div className="text-center mt-10">
+          <button
+            onClick={showMoreCards}
+            className="mx-auto shadow-xl bg-green-200 py-4 px-8 transform duration-500 hover:-translate-y-2 cursor-pointer max-h-fit rounded-md text-2xl font-bold text-gray-800"
+          >
+            See More
+          </button>
+        </div>
+        
+        )}
       </section>
     </div>
   );

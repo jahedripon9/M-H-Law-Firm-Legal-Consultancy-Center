@@ -7,6 +7,7 @@ function App() {
   return (
     <div className='container mx-auto'>
       <Home />
+      
     </div>
   )
 }

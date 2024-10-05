@@ -1,11 +1,11 @@
 const LawServiceOne = () => {
   return (
     <div>
-      <section className="ezy__service5 light py-14 md:py-24 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white">
+      <section className="ezy__service5 light py-14 md:py-10 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white">
         <div className="container px-4">
           <div className="grid grid-cols-12 md:mb-12">
             <div className="col-span-12 lg:col-span-6 lg:col-start-4 text-center">
-              <h2 className="text-3xl leading-none md:text-[45px] font-bold mb-6">
+              <h2 className="text-3xl leading-none md:text-[45px] font-bold mb-5">
                 Our Sectors of Work
               </h2>
               <p className="text-lg opacity-80">

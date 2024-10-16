@@ -39,9 +39,11 @@ const ClientMeeting = () => {
                 leading up to the breach?
               </p>
             </div>
-            <button className="mt-2 md:mt-5 p-3 px-5 bg-black text-white font-bold text-sm hover:bg-purple-800">
-              Read More
-            </button>
+            <div className="mt-6">
+            <a href="#contact"><button className="inline-block rounded border border-current px-8 py-3 text-sm font-medium text-black transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:text-black">
+              Book a Free Call Today
+            </button></a>
+          </div>
           </div>
         </section>
       </section>

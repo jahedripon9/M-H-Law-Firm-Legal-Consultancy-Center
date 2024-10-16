@@ -5,7 +5,7 @@ import LawServiceOne from "../LawServices/LawServiceOne";
 import OurRecentWork from "../OurRecentWork/OurRecentWork";
 import LawServices from "../LawServices/LawServices"; 
 import ContactUs from "../ContactUs/ContactUs";
-import FAQ from "../FAQ/FAQ";
+// import FAQ from "../FAQ/FAQ";
 import Features from "../Features/Features";
 import OurTeam from "../OurTeam/OurTeam";
 import Footer from "../Shared/Footer";
@@ -14,6 +14,7 @@ import Navbar from "../Shared/Navbar";
 import Testimonial from "../Testimonials/Testimonial";
 import Achievements from "../Achievements/Achievements";
 import BookaFreeCall from "../ContactUs/BookaFreeCall";
+import Client from "../Achievements/Client";
 
 
 const Home = () => {
@@ -67,6 +68,7 @@ const Home = () => {
       <Achievements />
       <ContactUs />
       <BookaFreeCall />
+      <Client />
       <Footer />
     </div>
   );

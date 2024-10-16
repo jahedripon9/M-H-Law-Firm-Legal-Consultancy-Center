@@ -7,7 +7,7 @@ const BookaFreeCall = () => {
             <h3 className="text-3xl text-black font-bold">
               Book a free call and get started today
             </h3>
-            <p className="text-black leading-relaxed">
+            <p className="text-black leading-relaxed font-semibold">
               There’s NO retainer, pressure, or obligation
             </p>
           </div>

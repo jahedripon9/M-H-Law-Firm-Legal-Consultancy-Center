@@ -20,16 +20,11 @@ const Hero = () => {
         We are here to help you take care of your legality with the best service especially for you.
         </p>
         {/* <!-- Button Container --> */}
-        <div className="mt-8">
-            <a href="#"
-                className="">                
-                <a
-                  className="inline-block rounded border border-current px-8 py-3 text-sm font-medium text-green-600 transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:text-green-500"
-                  href="#"
-                >
-                  GET STARTED
-                </a></a>
-        </div>
+        <div className="mt-6">
+            <a href="#contact"><button className="inline-block rounded border border-current px-8 py-3 text-sm font-medium text-black transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:text-black">
+              Book a Free Call Today
+            </button></a>
+          </div>
     </div>
     {/* <!-- Close Text Wrapper --> */}
 </div>

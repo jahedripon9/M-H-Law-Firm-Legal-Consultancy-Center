@@ -80,7 +80,7 @@ const LawServices = () => {
   };
 
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto" id="law">
       <div className="mx-auto max-w-xl text-center">
         <h1 className="text-3xl font-extrabold sm:text-5xl">
           Why do we help with

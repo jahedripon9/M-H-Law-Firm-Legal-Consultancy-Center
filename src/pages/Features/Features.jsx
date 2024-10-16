@@ -1,79 +1,60 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCheck } from "@fortawesome/free-solid-svg-icons";
-import classNames from "classnames";
-import PropTypes from "prop-types";
-
-
-const features = [
+const faqsList = [
 	{
-		desc: "Start making money today on each sale you make.",
+		q: "What are some random questions to ask?",
+		a: "That's exactly the reason we created this random question generator. There are hundreds of random questions to choose from so you're able to find the perfect random question."
 	},
 	{
-		desc: "Sell from a big library of 1000+ courses",
+		q: "Do you include common questions?",
+		a: "This generator doesn't include most common questions. The thought is that you can come up with common questions on your own so most of the questions in this generator."
 	},
 	{
-		desc: "Sell any courses that match your niche.",
+		q: "Can I use this for 21 questions?",
+		a: "Yes! there are two ways that you can use this question generator depending on what you're after. You can indicate that you want 21 questions generated."
 	},
 	{
-		desc: "Easy tracking system through Rakuten affiliate platform.",
+		q: "Are these questions for girls or for boys?",
+		a: "The questions in this generator are gender neutral and can be used to ask either male of females (or any other gender the person identifies with)."
 	},
-];
-
-const FeaturedItem = ({ feature, index }) => {
-	return (
-		<div
-			className={classNames(
-				"bg-gray-100 dark:bg-slate-700 flex items-center rounded-xl p-4",
-				{ "mb-4": index !== features.length - 1 }
-			)}
-		>
-			<div className="flex justify-center items-center text-[15px] p-3 bg-blue-600 text-white rounded-full mr-3">
-				<FontAwesomeIcon icon={faCheck} />
-			</div>
-			<h4 className="text-[17px]">{feature.desc}</h4>
-		</div>
-	);
-};
-
-FeaturedItem.propTypes = {
-	feature: PropTypes.object.isRequired,
-	index: PropTypes.number,
-};
+	{
+		q: "What do you wish you had more talent doing?",
+		a: "If you've been searching for a way to get random questions, you've landed on the correct webpage. We created the Random Question Generator to ask you as many random questions as your heart desires."
+	},
+	{
+		q: "What are some random questions to ask?",
+		a: "That's exactly the reason we created this random question generator. There are hundreds of random questions to choose from so you're able to find the perfect random question to ask friends."
+	}
+]
 
 const Features = () => {
-	return (
-		<section className="py-24 md:py-36 bg-white dark:bg-[#0b1727] text-black dark:text-white relative overflow-hidden z-10">
-			<div className="container px-4 mx-auto">
-				<div className="flex max-w-3xl justify-center text-center mx-auto">
-					<div>
-						<h1 className="text-3xl font-bold leading-tight md:text-[45px] mb-12">
-							Become An Affiliate
-						</h1>
-					</div>
-				</div>
-				<div className="grid grid-cols-2 gap-6 items-center">
-					<div className="col-span-2 md:col-span-1 md:order-2">
-						<div className="relative mb-12">
-							<img
-								src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio29.jpg"
-								alt=""
-								className="rounded-3xl max-w-full h-auto mx-auto"
-							/>
-							<img
-								src="https://cdn.easyfrontend.com/pictures/services/service19_1_2.png"
-								alt=""
-								className="absolute -bottom-24 left-0 -md:left-32 max-w-full h-auto"
-							/>
-						</div>
-					</div>
-					<div className="col-span-2 md:col-span-1 mt-12 md:mt-0 lg:mr-12">
-						{features.map((feature, i) => (
-							<FeaturedItem feature={feature} key={i} index={i} />
-						))}
-					</div>
-				</div>
-			</div>
-		</section>
-	);
-};
-export default Features;
+  return (
+	<div className="leading-relaxed mt-12 mx-4 md:mx-8">
+            <div className="text-center space-y-3">
+                <h1 className="block text-gray-800 text-3xl font-semibold">
+                    Frequently Asked Questions
+                </h1>
+                <p className="text-gray-500 max-w-lg mx-auto">
+                    Answered all frequently asked questions. Can’t find the answer you’re looking for? feel free to contact us.
+                </p>
+            </div>
+            <div className="relative bg-white rounded-md mt-10 md:max-w-3xl lg:max-w-4xl xl:max-w-5xl sm:mx-auto" style={{boxShadow: '0px 7px 20px 7px #F1F1F1'}}>
+                <div className="grid gap-4 py-8 md:grid-cols-2">
+                    {
+                        faqsList.map((item, idx) => (
+                            <div className="space-y-3 mt-6 px-8" key={idx}>
+                                <h4 className="text-gray-800 text-xl font-semibold ">
+                                    {item.q}
+                                </h4>
+                                <p className="text-gray-500">
+                                    {item.a}
+                                </p>
+                            </div>
+                        ))
+                    }
+                </div>
+                <span className="w-0.5 h-full bg-gray-200 m-auto absolute top-0 left-0 right-0 hidden md:block"></span>
+            </div>
+        </div>
+  )
+}
+
+export default Features

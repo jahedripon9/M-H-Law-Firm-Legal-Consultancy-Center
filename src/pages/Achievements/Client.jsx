@@ -3,10 +3,17 @@ const Client = () => {
     <div className="py-10">
       <div className="max-w-screen-xl mx-auto px-4 md:px-8">
         <div className="max-w-xl mx-auto text-center">
-          <h3 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
-            Some of Our <span className="text-red-500 underline">Client</span>
-          </h3>
+          
         </div>
+        <div className="mx-auto max-h-xl text-center">
+        <h1 className="text-3xl font-extrabold sm:text-5xl">
+        Some of Our 
+          <span className="font-extrabold text-red-500 ">
+            {" "}
+            Client{" "}
+          </span>
+        </h1>
+      </div>
         <div className="mt-12 flex justify-center">
           <ul className="inline-grid grid-cols-2 gap-x-10 gap-y-6 md:gap-x-16 md:grid-cols-3 lg:grid-cols-4">
             {/* LOGO 1 */}

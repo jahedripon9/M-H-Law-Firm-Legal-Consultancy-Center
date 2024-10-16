@@ -5,11 +5,17 @@ import img4 from '../../assets/4.jpg'
 const Achievements = () => {
   return (
     <div>
+      <div className="mx-auto max-h-xl text-center ">
+        <h1 className="text-2xl font-extrabold sm:text-5xl ">
+        Some of Our{" "}
+          <strong className="font-bold text-red-500 sm:font-extrabold">
+            {" "}
+            Achievements{" "}
+          </strong>
+        </h1>
+      </div>
       <div className="w-2/3">
-        <h2 className="text-3xl md:text-[52px] font-bold">
-          Some of Our{" "}
-          <span className="text-red-500 underline">Achievements</span>
-        </h2>
+                
       </div>
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-2 py-12">
         <article className="flex bg-white transition hover:shadow-xl p-2 border border-gray-200 ">

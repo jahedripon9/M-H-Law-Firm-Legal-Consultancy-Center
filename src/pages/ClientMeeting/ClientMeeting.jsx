@@ -2,10 +2,10 @@ import Client from "../../assets/Client.jpg";
 const ClientMeeting = () => {
   return (
     <div className="container mx-auto">
-      <div className="mx-auto max-w-xl text-center ">
+      <div className="mx-auto max-h-xl text-center ">
         <h1 className="text-2xl font-extrabold sm:text-5xl ">
           Client Case
-          <strong className="font-bold text-red-700 sm:font-extrabold">
+          <strong className="font-bold text-red-500 sm:font-extrabold">
             {" "}
             Consultation{" "}
           </strong>

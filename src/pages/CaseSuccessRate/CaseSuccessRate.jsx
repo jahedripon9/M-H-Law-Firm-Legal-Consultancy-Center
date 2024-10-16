@@ -5,10 +5,10 @@ import img4 from "../../assets/law.svg";
 const CaseSuccessRate = () => {
   return (
     <div className="container mx-auto">
-      <div className="mx-auto max-w-xl text-center ">
+      <div className="mx-auto max-h-xl text-center ">
         <h1 className="text-2xl font-extrabold sm:text-4xl ">
           Case Winning
-          <strong className="font-bold text-red-700 sm:font-extrabold">
+          <strong className="font-bold text-red-500 sm:font-extrabold">
             {" "}
             Probability{" "}
           </strong>

@@ -20,7 +20,7 @@ const LawServiceOne = () => {
               Legal Services for Bangladeshis residing abroad
               </h2>
               <p className="text-sm sm:text-lg font-semibold opacity-80">
-              <span className="text-red-500 font-semibold">M H Law Firm & Legal Consultancy Centre</span> is a trusted law firm dedicated to serving Non-Resident Bangladeshis (NRBs) by offering a comprehensive range of legal services. Our goal is to provide effective legal solutions tailored to the needs of Bangladeshis living abroad. With a skilled team of barristers, advocates, and legal consultants, <span className="text-red-500 font-semibold">M H Law Firm & Legal Consultancy Centre</span> acts as a one-stop legal service provider, ensuring the protection of our clients' rights and interests.
+              <span className="text-red-500 font-semibold">M H Law Firm & Legal Consultancy Centre</span> is a trusted law firm dedicated to serving Non-Resident Bangladeshis (NRBs) by offering a comprehensive range of legal services. Our goal is to provide effective legal solutions tailored to the needs of Bangladeshis living abroad. With a skilled team of barristers, advocates, and legal consultants, <span className="text-red-500 font-semibold">M H Law Firm & Legal Consultancy Centre</span> acts as a one-stop legal service provider, ensuring the protection of our clients rights and interests.
               </p>
             </div>
           </div>

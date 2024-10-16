@@ -81,17 +81,18 @@ const LawServices = () => {
 
   return (
     <div className="container mx-auto" id="law">
-      <div className="mx-auto max-w-xl text-center">
+      <div className="mx-auto max-h-xl text-center">
         <h1 className="text-3xl font-extrabold sm:text-5xl">
           Why do we help with
-          <strong className="font-extrabold text-red-700 sm:block">
+          <span className="font-extrabold text-red-500 ">
             {" "}
-            legalization?{" "}
-          </strong>
+            Legalization?{" "}
+          </span>
         </h1>
       </div>
 
       <section className="container mx-auto p-10 md:py-20 px-0 md:p-20 md:px-0">
+        <a href="#contact">
         <section className="grid lg:grid-cols-2 xl:grid-cols-4 2xl:grid-cols-4 grid-cols-1 gap-10 antialiased">
           {cardData.slice(0, visibleCards).map((card) => (
             <article
@@ -113,6 +114,7 @@ const LawServices = () => {
             </article>
           ))}
         </section>
+        </a>
 
         {/* Show More button */}
         {visibleCards < cardData.length && (

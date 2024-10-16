@@ -8,16 +8,16 @@ const OurRecentWork = () => {
       <section className="ezy__portfolio16 light py-14 md:py-24 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white">
         <div className="container px-4 mx-auto">
           <div className="flex justify-between items-center max-w-7xl mx-auto">
-            <div className="w-2/3">
-              <h2 className="text-3xl md:text-[52px] font-bold">
-                Our Recent Work
-              </h2>
-            </div>
-            <div className="w-1/3 text-end">
-              <button className="font-bold bg-blue-600 text-white px-8 py-3 hover:bg-opacity-90 duration-300 rounded">
-                See All
-              </button>
-            </div>
+            
+            <div className="mx-auto max-h-xl text-center">
+        <h1 className="text-3xl font-extrabold sm:text-5xl">
+        Our Recent
+          <span className="font-extrabold F ">
+            {" "}
+            Work{" "}
+          </span>
+        </h1>
+      </div>
           </div>
           <div className="flex flex-col gap-6 max-w-7xl mt-12 mx-auto">
             {/* <!-- card item --> */}
